@@ -1,26 +1,78 @@
-# React + Vite
+# SoftSell – Sell Your Unused Software Licenses
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**SoftSell** is a modern, responsive single-page web application built with React.js + Vite. It allows users to resell unused or surplus software licenses securely and efficiently.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Features
 
-## Expanding the ESLint configuration
+### Clean Landing Page
+- Hero section with clear call-to-action ("Sell My Licenses")
+- Fully responsive for all screen sizes
+- Montserrat font for elegant modern look
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### How It Works Section
+- Explains the simple 3-step selling process
+- Responsive cards with icons and animations
 
+###  Why Choose Us Section
+- Highlights key benefits (Secure, Fast Payment, Free Pricing)
+- Styled for clarity and visual appeal
 
+###  Testimonials
+- Customer reviews with names, roles, and feedback
+- Clean design with cards layout
 
+### Contact Form
+- Fields: Name, Email, Company, License Type, Message
+- Client-side validation with error messages
+- Uses **Framer Motion** for animated transitions
 
+###  Theme Toggle (Light/Dark)
+- Light and dark theme support using **React Context API**
+- Toggle available in both Navbar and Footer and also whole website
 
+### 💬 LLM-Powered Chat Widget (Bonus)
+- AI-powered chatbot using OpenAI API
+- Toggleable chat interface: "Chat with Us" button
 
+---
 
+## 🛠️ Technologies Used
 
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/harimaurya111/SoftSell-mern.git
-git push -u origin main
+- **Frontend**
+  - React.js + Vite
+  - Google Fonts (font-family: "Montserrat", sans-serif)
+  - Tailwind CSS
+  - lucide-react
+  - Framer Motion (animations)
+  - React Context API (theme management)
+
+---
+
+## 📂 Project Structure (Simplified)
+softsell/
+├── public/
+│   ├── favicon.icon, logo (credex_logo)
+├── src/
+│   ├── assets/                # Images, icons, illustrations
+│   ├── components/            # Reusable UI components
+│   │   ├── Navbar.jsx
+│   │   ├── Hero.jsx
+│   │   ├── HowItWorks.jsx
+│   │   ├── WhyChooseUs.jsx
+│   │   ├── Testimonials.jsx
+│   │   ├── ContactForm.jsx
+│   │   └── ChatWidget.jsx      # For OpenAI key if using LLM
+│   │   ├── Footer.jsx
+│   ├── data/                  # Dummy data (e.g., testimonials, steps)
+│   │   └── content.js               
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── index.css              # Tailwind or global styles
+│   └── context.js 
+       ├── ThemeCOntext.jsx              # Theme config (colors, fonts if needed)
+├── package.json
+├── README.md
+├── vite.config.js
+└── tailwind.config.js         # If using Tailwind
